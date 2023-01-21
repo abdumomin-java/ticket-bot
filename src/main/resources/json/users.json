@@ -13,6 +13,6 @@
     "phoneNumber": "+998907478055",
     "role": "ADMIN",
     "balance": 0,
-    "botState": "TRAVEL_ADD_BUS"
+    "botState": "TRAVEL_MENU"
   }
 ]
