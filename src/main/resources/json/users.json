@@ -1,0 +1,18 @@
+[
+  {
+    "id": "42b9a445-0e49-454c-91d4-ce35edc105d9",
+    "chatId": "1752907421",
+    "phoneNumber": "+998930815351",
+    "role": "ADMIN",
+    "balance": 0,
+    "botState": "TRAVEL_ADD_FROM"
+  },
+  {
+    "id": "71e8f88f-d88d-4203-90f5-f5bc712501f1",
+    "chatId": "5181619427",
+    "phoneNumber": "+998934568461",
+    "role": "ADMIN",
+    "balance": 0,
+    "botState": "BUS_SHOW_BUS"
+  }
+]
