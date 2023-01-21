@@ -2,11 +2,12 @@ package com.pdp.ticket.service.impl;
 
 import com.pdp.ticket.model.BotState;
 import com.pdp.ticket.model.Destination;
-import com.pdp.ticket.model.EditingTravel;
+import com.pdp.ticket.dto.EditingTravel;
 import com.pdp.ticket.model.Travel;
 import com.pdp.ticket.service.TravelOperation;
 import com.pdp.ticket.util.KeybordHelper;
 import com.pdp.ticket.util.StorageOperation;
+import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.updatingmessages.EditMessageText;
 import org.telegram.telegrambots.meta.api.objects.CallbackQuery;
 import org.telegram.telegrambots.meta.api.objects.Message;
@@ -15,7 +16,6 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKe
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatterBuilder;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -118,10 +118,9 @@ public class TravelOperationImpl implements TravelOperation {
     }
 
     @Override
-    public EditMessageText addArrivalTimeTravel(Message message) {
-        EditMessageText editMessageText = new EditMessageText();
+    public SendMessage addArrivalTimeTravel(Message message) {
+        SendMessage editMessageText = new SendMessage();
         editMessageText.setChatId(message.getChatId());
-        editMessageText.setMessageId(message.getMessageId());
         String departureTime = message.getText();
         if (!departureTime.matches("[0-9]{2}[.][0-9]{2}[.][0-9]{4} [0-9]{2}:[0-9]{2}")) {
             editMessageText.setText(" DepartureTime ni noto`g`ri formatda kiritdingiz!");
@@ -141,12 +140,11 @@ public class TravelOperationImpl implements TravelOperation {
     }
 
     @Override
-    public EditMessageText addBusTravel(Message message) {
-        EditMessageText editMessageText = new EditMessageText();
+    public SendMessage addBusTravel(Message message) {
+        SendMessage editMessageText = new SendMessage();
         editMessageText.setChatId(message.getChatId());
-        editMessageText.setMessageId(message.getMessageId());
         String arrivalTime = message.getText();
-        if (arrivalTime.matches("[0-9]{2}[.][0-9]{2}[.][0-9]{4} [0-9]{2}:[0-9]{2}")) {
+        if (!arrivalTime.matches("[0-9]{2}[.][0-9]{2}[.][0-9]{4} [0-9]{2}:[0-9]{2}")) {
             editMessageText.setText(" ArrivalTime ni noto`g`ri kiritdingiz! ");
             editMessageText.setReplyMarkup(getTravelOperationMenu());
             StorageOperation.updateUserState(message.getChatId().toString(), BotState.TRAVEL_MENU);

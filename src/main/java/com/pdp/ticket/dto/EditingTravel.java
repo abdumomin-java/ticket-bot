@@ -1,18 +1,17 @@
-package com.pdp.ticket.model;
+package com.pdp.ticket.dto;
 
+import com.pdp.ticket.model.Travel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.Objects;
-import java.util.UUID;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter
 @Getter
-
 public class EditingTravel {
 
     private String id;

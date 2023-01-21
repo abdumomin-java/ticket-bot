@@ -2,7 +2,7 @@ package com.pdp.ticket.service.impl;
 
 import com.pdp.ticket.model.BotState;
 import com.pdp.ticket.model.Bus;
-import com.pdp.ticket.model.EditingBus;
+import com.pdp.ticket.dto.EditingBus;
 import com.pdp.ticket.service.BusService;
 import com.pdp.ticket.util.KeybordHelper;
 import com.pdp.ticket.util.StorageOperation;

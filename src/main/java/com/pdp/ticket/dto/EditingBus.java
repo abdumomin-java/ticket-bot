@@ -1,5 +1,6 @@
-package com.pdp.ticket.model;
+package com.pdp.ticket.dto;
 
+import com.pdp.ticket.model.Bus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

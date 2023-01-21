@@ -1,18 +1,18 @@
 [
   {
-    "id": "42b9a445-0e49-454c-91d4-ce35edc105d9",
+    "id": "2e5a83d5-59f7-4a54-a696-b01dcaf3f7af",
     "chatId": "1752907421",
-    "phoneNumber": "+998930815351",
+    "phoneNumber": "998930815351",
     "role": "ADMIN",
     "balance": 0,
-    "botState": "TRAVEL_ADD_FROM"
+    "botState": "ADMIN_MENU"
   },
   {
-    "id": "71e8f88f-d88d-4203-90f5-f5bc712501f1",
-    "chatId": "5181619427",
-    "phoneNumber": "+998934568461",
+    "id": "7f49b076-a184-4ace-b934-f2bbbbe245dd",
+    "chatId": "5575152637",
+    "phoneNumber": "+998907478055",
     "role": "ADMIN",
     "balance": 0,
-    "botState": "BUS_SHOW_BUS"
+    "botState": "TRAVEL_ADD_BUS"
   }
 ]

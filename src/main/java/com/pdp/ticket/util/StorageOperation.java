@@ -3,13 +3,16 @@ package com.pdp.ticket.util;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.pdp.ticket.config.LocalDateTimeAdapter;
+import com.pdp.ticket.dto.EditingBus;
+import com.pdp.ticket.dto.EditingTravel;
 import com.pdp.ticket.model.*;
 
 import java.io.*;
 import java.lang.reflect.Type;
 import java.nio.file.Files;
-import java.nio.file.OpenOption;
 import java.nio.file.Path;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,8 +23,7 @@ public class StorageOperation {
     private static final String BUS = "src/main/resources/json/bus.json";
     private static final String DESTINATION = "src/main/resources/json/destination.json";
     private static final String TRAVEL = "src/main/resources/json/travel.json";
-    private static final String EDITING_TRAVEL = "D:\\Java codes\\model3\\download for zips\\ticket_bot_19_01\\ticket-bot\\src\\main\\resources\\json\\editingTravel.json";
-//    private static final String DESTINATION = "src/main/resources/json/destination.json";
+    private static final String EDITING_TRAVEL = "src/main/resources/json/editingTravel.json";
 
     private static final String EDITING_BUS = "src/main/resources/json/editingBus.json";
 
@@ -106,9 +108,9 @@ public class StorageOperation {
     }
 
     public static List<EditingTravel> getEditingTravel() {
-        Type type = new TypeToken<List<EditingTravel>>() {
-        }.getType();
-        Gson gson = new Gson();
+        Type type = new TypeToken<List<EditingTravel>>() {}.getType();
+        Gson gson = new GsonBuilder()
+                .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter().nullSafe()).create();
         try (BufferedReader reader = Files.newBufferedReader(Path.of(EDITING_TRAVEL))) {
             List<EditingTravel> editingBuses = gson.fromJson(reader, type);
             return editingBuses == null ? new ArrayList<>() : editingBuses;
@@ -118,12 +120,9 @@ public class StorageOperation {
         return new ArrayList<>();
     }
 
-//    public static EditingTravel getEditingTravelChatId(String ) {
-//        return getEditingTravel().stream().filter(e -> chatId.equals(e.getId())).findFirst().orElse(new EditingTravel());
-//    }
-
     public static void writeEditingTravel(List<EditingTravel> editingBuses) {
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        Gson gson = new GsonBuilder().setPrettyPrinting()
+                .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter().nullSafe()).create();
         String s = gson.toJson(editingBuses);
         try {
             Files.write(Path.of(EDITING_TRAVEL), s.getBytes());
@@ -131,15 +130,6 @@ public class StorageOperation {
             e.printStackTrace();
         }
     }
-
-//    public static void writeEditingTravel(List<EditingTravel> editingBuses) {
-//        Gson gson = new GsonBuilder().serializeNulls().setPrettyPrinting().create();
-//        try (PrintWriter writer = new PrintWriter(new File(EDITING_TRAVEL))) {
-//            writer.write(gson.toJson(editingBuses));
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//    }
 
     public static List<EditingBus> getEditingBus() {
         Type type = new TypeToken<List<EditingBus>>() {
