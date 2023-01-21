@@ -87,8 +87,10 @@ public class TicketBot extends TelegramLongPollingBot {
                 sendMessage(TravelOperationImpl.getTravelOperationImpl().addDepartureTimeTravel(callbackQuery));
             } else if (data.startsWith("travel_bus_") && user.getRole().equals(Role.ADMIN) && user.getBotState().equals(BotState.TRAVEL_ADD_BUS)) {
                 sendMessage(TravelOperationImpl.getTravelOperationImpl().addPriceForPerSeat(callbackQuery));
-            } else if (data.startsWith("edit_bus")) {
-                // data example edit_bus_02c77cec-8648-4336-a69c-cdb5631124a1
+            } else if (data.startsWith("buy_ticket")&& user.getRole().equals(Role.USER)&&user.getBotState().equals(BotState.USER_OPEN_MENU)) {
+                sendMessage(UserServiceImpl.getInstance().openBuyTicket(callbackQuery));
+            } else if (data.startsWith("my_history")) {
+
             }
         }
 
@@ -115,7 +117,7 @@ public class TicketBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotToken() {
-        return "5773494964:AAEtvEKpyTu96ukn0VIm8qKu_IsgmM7amgg";
+        return "token";
     }
 
     @Override

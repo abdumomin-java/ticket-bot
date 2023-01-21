@@ -82,7 +82,7 @@ public class BotServiceImpl implements BotService {
         replyKeyboardRemove.setRemoveKeyboard(true);
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(message.getChatId());
-        if (phoneNumber.equals("+998907478055")) {
+        if (phoneNumber.equals("+admin_number")) {
             user.setPhoneNumber(phoneNumber);
             user.setBotState(BotState.ADMIN_MENU);
             user.setRole(Role.ADMIN);
