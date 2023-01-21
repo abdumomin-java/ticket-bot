@@ -1,9 +1,7 @@
 package com.pdp.ticket.service.impl;
 
-import com.pdp.ticket.model.BotState;
-import com.pdp.ticket.model.Destination;
+import com.pdp.ticket.model.*;
 import com.pdp.ticket.dto.EditingTravel;
-import com.pdp.ticket.model.Travel;
 import com.pdp.ticket.service.TravelOperation;
 import com.pdp.ticket.util.KeybordHelper;
 import com.pdp.ticket.util.StorageOperation;
@@ -14,11 +12,13 @@ import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+import java.util.stream.Stream;
 
 public class TravelOperationImpl implements TravelOperation {
     @Override
@@ -158,20 +158,60 @@ public class TravelOperationImpl implements TravelOperation {
         StorageOperation.writeEditingTravel(editingTravels);
 
         StorageOperation.updateUserState(message.getChatId().toString(), BotState.TRAVEL_ADD_BUS);
-        editMessageText.setText(" Choose Bus :) ");
-
-//        editMessageText.setReplyMarkup();
+        List<Bus> buses = StorageOperation.getBuses().stream().filter(Bus::isActive).toList();
+        editMessageText.setText(" Choose Bus :)\n " + showBuses(buses));
+        editMessageText.setReplyMarkup(showBusButton(buses));
         return editMessageText;
     }
 
     @Override
-    public EditMessageText addPriceForPerSeat(CallbackQuery callbackQuery) {
-        return null;
+    public SendMessage addPriceForPerSeat(CallbackQuery callbackQuery) {
+        String busId = callbackQuery.getData().split("_")[2];
+        List<Bus> buses = StorageOperation.getBuses();
+        Bus bus1 = buses.stream().filter(bus -> bus.getId().toString().equals(busId)).findFirst().orElse(new Bus());
+        List<EditingTravel> editingTravel = StorageOperation.getEditingTravel();
+        EditingTravel editingTravel2 = editingTravel.stream().filter(editingTravel1 -> editingTravel1.getId().equals(callbackQuery.getMessage().getChatId().toString())).findFirst().orElse(new EditingTravel());
+        editingTravel2.getTravel().setBus(bus1);
+        StorageOperation.writeEditingTravel(editingTravel);
+        StorageOperation.updateUserState(callbackQuery.getMessage().getChatId().toString(), BotState.TRAVEL_ADD_PRICE_FOR_PER_SEAT);
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setText("enter price for per seat:");
+        sendMessage.setChatId(callbackQuery.getMessage().getChatId());
+        return sendMessage;
     }
 
     @Override
-    public EditMessageText addCreatedTimeTravel(Message message) {
-        return null;
+    public SendMessage addCreatedTimeTravel(Message message) {
+        SendMessage sendMessage = new SendMessage();
+        String messageText = message.getText();
+        List<EditingTravel> editingTravel = StorageOperation.getEditingTravel();
+        EditingTravel editingTravel2 = editingTravel.stream().filter(editingTravel1 -> editingTravel1.getId().equals(message.getChatId().toString())).findFirst().orElse(new EditingTravel());
+        Travel travel = editingTravel2.getTravel();
+        travel.setPriceForPerSeat(BigDecimal.valueOf(Long.parseLong(messageText)));
+        travel.setStatus(TravelStatus.NEW);
+        travel.setCreatedTime(LocalDateTime.now());
+        StorageOperation.writeEditingTravel(new ArrayList<>());
+        StorageOperation.writeTravel(travel);
+        StorageOperation.updateUserState(message.getChatId().toString(),BotState.TRAVEL_MENU);
+        Bus bus = travel.getBus();
+        List<Ticket> tickets = new ArrayList<>();
+        int numberOfSeats = bus.getNumberOfSeats();
+        for (int i = 0; i < numberOfSeats; i++) {
+            Ticket ticket = new Ticket();
+            ticket.setId(UUID.randomUUID());
+            ticket.setPrice(travel.getPriceForPerSeat());
+            ticket.setTravel(travel);
+            ticket.setStatus(TicketStatus.AVAILABLE);
+            ticket.setSeatNumber(i+1);
+            tickets.add(ticket);
+        }
+        List<Ticket> allTickets = StorageOperation.getTickets();
+        allTickets.addAll(tickets);
+        StorageOperation.writeTickets(allTickets);
+        sendMessage.setChatId(message.getChatId());
+        sendMessage.setText("Succesfully added");
+        sendMessage.setReplyMarkup(getTravelOperationMenu());
+        return sendMessage;
     }
 
     private InlineKeyboardMarkup getDestinationsButton(boolean isFrom, String fromId) {
@@ -219,5 +259,53 @@ public class TravelOperationImpl implements TravelOperation {
 
     public static TravelOperationImpl getTravelOperationImpl() {
         return travelOperationImpl;
+    }
+
+    private String showBuses(List<Bus> buses) {
+        StringBuilder busfilds = new StringBuilder();
+        for (int i = 0; i < buses.size(); i++) {
+            busfilds.append(i + 1).append(". Name: ")
+                    .append(buses.get(i).getName()).
+                    append("\nnumber: ")
+                    .append(buses.get(i).getNumber())
+                    .append("\nnumber of seats: ")
+                    .append(buses.get(i).getNumberOfSeats()).append("\n=======\n");
+        }
+        return busfilds.toString();
+    }
+
+    private InlineKeyboardMarkup showBusButton(List<Bus> buses) {
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> buttons = new ArrayList<>();
+        int n = buses.size() % 4;
+        List<InlineKeyboardButton> row = new ArrayList<>();
+
+        for (int i = 0; i < buses.size() - n; i++) {
+            if (i % 4 == 3) {
+                InlineKeyboardButton button = new InlineKeyboardButton();
+                button.setText(String.valueOf((i + 1)));
+                button.setCallbackData("travel_bus_" + buses.get(i).getId());
+                row.add(button);
+                buttons.add(row);
+                row = new ArrayList<>();
+            } else {
+                InlineKeyboardButton button = new InlineKeyboardButton();
+                button.setText(String.valueOf((i + 1)));
+                button.setCallbackData("travel_bus_" + buses.get(i).getId());
+                row.add(button);
+            }
+        }
+        if (n > 0) {
+            for (int i = buses.size() - n; i < buses.size(); i++) {
+                InlineKeyboardButton button = new InlineKeyboardButton();
+                button.setText(String.valueOf((i + 1)));
+                button.setCallbackData("travel_bus_" + buses.get(i).getId());
+                row.add(button);
+            }
+            buttons.add(row);
+
+        }
+        inlineKeyboardMarkup.setKeyboard(buttons);
+        return inlineKeyboardMarkup;
     }
 }

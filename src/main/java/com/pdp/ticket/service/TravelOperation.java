@@ -16,7 +16,8 @@ public interface TravelOperation {
 
     SendMessage addArrivalTimeTravel(Message message);
     SendMessage addBusTravel(Message message);
-    EditMessageText addPriceForPerSeat(CallbackQuery callbackQuery);
-    EditMessageText addCreatedTimeTravel(Message message);
+    SendMessage addPriceForPerSeat(CallbackQuery callbackQuery);
+    SendMessage addCreatedTimeTravel(Message message);
+
 
 }

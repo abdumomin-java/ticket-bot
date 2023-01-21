@@ -1,273 +1,37 @@
 [
   {
-    "id": "388bfce9-7f6e-439d-86e0-b2f0a5dab52f",
-    "name": "Qjqjwiw",
-    "number": "919²9jajsjs",
-    "numberOfSeats": 829191,
+    "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+    "name": "b26",
+    "number": "12",
+    "numberOfSeats": 20,
     "isActive": true
   },
   {
-    "id": "dbbf69be-fc75-4cd8-8eeb-601c6158c173",
-    "name": "Elshod",
-    "number": "Elshod",
-    "numberOfSeats": 72722829,
+    "id": "8e443c89-f12c-4bad-87ba-47b03d54ae31",
+    "name": "aa",
+    "number": "4567",
+    "numberOfSeats": 35,
     "isActive": true
   },
   {
-    "id": "4e3ce11b-7ac6-4069-a800-49ca849b105a",
-    "name": "Elshodbek",
-    "number": "12345678",
-    "numberOfSeats": 67382,
+    "id": "71200aec-3727-4d43-aa78-ea06c9a3049f",
+    "name": "kk",
+    "number": "233",
+    "numberOfSeats": 444,
     "isActive": true
   },
   {
-    "id": "bb95a02c-02c0-49ad-87ab-ca175c912b1a",
-    "name": "zxcvvvvzz",
-    "number": "zzzzz",
-    "numberOfSeats": 89,
-    "isActive": true
-  }, {
-  "id": "388bfce9-7f6e-439d-86e0-b2f0a5dab52f",
-  "name": "Qjqjwiw",
-  "number": "919²9jajsjs",
-  "numberOfSeats": 829191,
-  "isActive": true
-},
-  {
-    "id": "dbbf69be-fc75-4cd8-8eeb-601c6158c173",
-    "name": "Elshod",
-    "number": "Elshod",
-    "numberOfSeats": 72722829,
+    "id": "a80120d0-db24-4219-b0c2-91b374b23f37",
+    "name": "jj",
+    "number": "22",
+    "numberOfSeats": 21,
     "isActive": true
   },
   {
-    "id": "4e3ce11b-7ac6-4069-a800-49ca849b105a",
-    "name": "Elshodbek",
-    "number": "12345678",
-    "numberOfSeats": 67382,
-    "isActive": true
-  },
-  {
-    "id": "bb95a02c-02c0-49ad-87ab-ca175c912b1a",
-    "name": "zxcvvvvzz",
-    "number": "zzzzz",
-    "numberOfSeats": 89,
-    "isActive": true
-  }, {
-  "id": "388bfce9-7f6e-439d-86e0-b2f0a5dab52f",
-  "name": "Qjqjwiw",
-  "number": "919²9jajsjs",
-  "numberOfSeats": 829191,
-  "isActive": true
-},
-  {
-    "id": "dbbf69be-fc75-4cd8-8eeb-601c6158c173",
-    "name": "Elshod",
-    "number": "Elshod",
-    "numberOfSeats": 72722829,
-    "isActive": true
-  },
-  {
-    "id": "4e3ce11b-7ac6-4069-a800-49ca849b105a",
-    "name": "Elshodbek",
-    "number": "12345678",
-    "numberOfSeats": 67382,
-    "isActive": true
-  },
-  {
-    "id": "bb95a02c-02c0-49ad-87ab-ca175c912b1a",
-    "name": "zxcvvvvzz",
-    "number": "zzzzz",
-    "numberOfSeats": 89,
-    "isActive": true
-  }, {
-  "id": "388bfce9-7f6e-439d-86e0-b2f0a5dab52f",
-  "name": "Qjqjwiw",
-  "number": "919²9jajsjs",
-  "numberOfSeats": 829191,
-  "isActive": true
-},
-  {
-    "id": "dbbf69be-fc75-4cd8-8eeb-601c6158c173",
-    "name": "Elshod",
-    "number": "Elshod",
-    "numberOfSeats": 72722829,
-    "isActive": true
-  },
-  {
-    "id": "4e3ce11b-7ac6-4069-a800-49ca849b105a",
-    "name": "Elshodbek",
-    "number": "12345678",
-    "numberOfSeats": 67382,
-    "isActive": true
-  },
-  {
-    "id": "bb95a02c-02c0-49ad-87ab-ca175c912b1a",
-    "name": "zxcvvvvzz",
-    "number": "zzzzz",
-    "numberOfSeats": 89,
-    "isActive": true
-  }, {
-  "id": "388bfce9-7f6e-439d-86e0-b2f0a5dab52f",
-  "name": "Qjqjwiw",
-  "number": "919²9jajsjs",
-  "numberOfSeats": 829191,
-  "isActive": true
-},
-  {
-    "id": "dbbf69be-fc75-4cd8-8eeb-601c6158c173",
-    "name": "Elshod",
-    "number": "Elshod",
-    "numberOfSeats": 72722829,
-    "isActive": true
-  },
-  {
-    "id": "4e3ce11b-7ac6-4069-a800-49ca849b105a",
-    "name": "Elshodbek",
-    "number": "12345678",
-    "numberOfSeats": 67382,
-    "isActive": true
-  },
-  {
-    "id": "bb95a02c-02c0-49ad-87ab-ca175c912b1a",
-    "name": "zxcvvvvzz",
-    "number": "zzzzz",
-    "numberOfSeats": 89,
-    "isActive": true
-  }, {
-  "id": "388bfce9-7f6e-439d-86e0-b2f0a5dab52f",
-  "name": "Qjqjwiw",
-  "number": "919²9jajsjs",
-  "numberOfSeats": 829191,
-  "isActive": true
-},
-  {
-    "id": "dbbf69be-fc75-4cd8-8eeb-601c6158c173",
-    "name": "Elshod",
-    "number": "Elshod",
-    "numberOfSeats": 72722829,
-    "isActive": true
-  },
-  {
-    "id": "4e3ce11b-7ac6-4069-a800-49ca849b105a",
-    "name": "Elshodbek",
-    "number": "12345678",
-    "numberOfSeats": 67382,
-    "isActive": true
-  },
-  {
-    "id": "bb95a02c-02c0-49ad-87ab-ca175c912b1a",
-    "name": "zxcvvvvzz",
-    "number": "zzzzz",
-    "numberOfSeats": 89,
-    "isActive": true
-  }, {
-  "id": "388bfce9-7f6e-439d-86e0-b2f0a5dab52f",
-  "name": "Qjqjwiw",
-  "number": "919²9jajsjs",
-  "numberOfSeats": 829191,
-  "isActive": true
-},
-  {
-    "id": "dbbf69be-fc75-4cd8-8eeb-601c6158c173",
-    "name": "Elshod",
-    "number": "Elshod",
-    "numberOfSeats": 72722829,
-    "isActive": true
-  },
-  {
-    "id": "4e3ce11b-7ac6-4069-a800-49ca849b105a",
-    "name": "Elshodbek",
-    "number": "12345678",
-    "numberOfSeats": 67382,
-    "isActive": true
-  },
-  {
-    "id": "bb95a02c-02c0-49ad-87ab-ca175c912b1a",
-    "name": "zxcvvvvzz",
-    "number": "zzzzz",
-    "numberOfSeats": 89,
-    "isActive": true
-  }, {
-  "id": "388bfce9-7f6e-439d-86e0-b2f0a5dab52f",
-  "name": "Qjqjwiw",
-  "number": "919²9jajsjs",
-  "numberOfSeats": 829191,
-  "isActive": true
-},
-  {
-    "id": "dbbf69be-fc75-4cd8-8eeb-601c6158c173",
-    "name": "Elshod",
-    "number": "Elshod",
-    "numberOfSeats": 72722829,
-    "isActive": true
-  },
-  {
-    "id": "4e3ce11b-7ac6-4069-a800-49ca849b105a",
-    "name": "Elshodbek",
-    "number": "12345678",
-    "numberOfSeats": 67382,
-    "isActive": true
-  },
-  {
-    "id": "bb95a02c-02c0-49ad-87ab-ca175c912b1a",
-    "name": "zxcvvvvzz",
-    "number": "zzzzz",
-    "numberOfSeats": 89,
-    "isActive": true
-  }, {
-  "id": "388bfce9-7f6e-439d-86e0-b2f0a5dab52f",
-  "name": "Qjqjwiw",
-  "number": "919²9jajsjs",
-  "numberOfSeats": 829191,
-  "isActive": true
-},
-  {
-    "id": "dbbf69be-fc75-4cd8-8eeb-601c6158c173",
-    "name": "Elshod",
-    "number": "Elshod",
-    "numberOfSeats": 72722829,
-    "isActive": true
-  },
-  {
-    "id": "4e3ce11b-7ac6-4069-a800-49ca849b105a",
-    "name": "Elshodbek",
-    "number": "12345678",
-    "numberOfSeats": 67382,
-    "isActive": true
-  },
-  {
-    "id": "bb95a02c-02c0-49ad-87ab-ca175c912b1a",
-    "name": "zxcvvvvzz",
-    "number": "zzzzz",
-    "numberOfSeats": 89,
-    "isActive": true
-  }, {
-  "id": "388bfce9-7f6e-439d-86e0-b2f0a5dab52f",
-  "name": "Qjqjwiw",
-  "number": "919²9jajsjs",
-  "numberOfSeats": 829191,
-  "isActive": true
-},
-  {
-    "id": "dbbf69be-fc75-4cd8-8eeb-601c6158c173",
-    "name": "Elshod",
-    "number": "Elshod",
-    "numberOfSeats": 72722829,
-    "isActive": true
-  },
-  {
-    "id": "4e3ce11b-7ac6-4069-a800-49ca849b105a",
-    "name": "Elshodbek",
-    "number": "12345678",
-    "numberOfSeats": 67382,
-    "isActive": true
-  },
-  {
-    "id": "bb95a02c-02c0-49ad-87ab-ca175c912b1a",
-    "name": "zxcvvvvzz",
-    "number": "zzzzz",
-    "numberOfSeats": 89,
+    "id": "51752627-22fa-4416-97ec-5b57c7cb5462",
+    "name": "aaa",
+    "number": "12",
+    "numberOfSeats": 23,
     "isActive": true
   }
 ]

@@ -49,6 +49,8 @@ public class TicketBot extends TelegramLongPollingBot {
                 sendMessage(TravelOperationImpl.getTravelOperationImpl().addArrivalTimeTravel(message));
             } else if (user.getRole().equals(Role.ADMIN) && user.getBotState().equals(BotState.TRAVEL_ADD_ARRIVAL_TIME)) {
                 sendMessage(TravelOperationImpl.getTravelOperationImpl().addBusTravel(message));
+            } else if (user.getRole().equals(Role.ADMIN) && user.getBotState().equals(BotState.TRAVEL_ADD_PRICE_FOR_PER_SEAT)) {
+                sendMessage(TravelOperationImpl.getTravelOperationImpl().addCreatedTimeTravel(message));
             }
 
 
@@ -83,11 +85,9 @@ public class TicketBot extends TelegramLongPollingBot {
                 sendMessage(TravelOperationImpl.getTravelOperationImpl().addToTravel(callbackQuery));
             } else if (data.startsWith("from_to") && user.getRole().equals(Role.ADMIN) && user.getBotState().equals(BotState.TRAVEL_ADD_TO)) {
                 sendMessage(TravelOperationImpl.getTravelOperationImpl().addDepartureTimeTravel(callbackQuery));
-            } else if ( data.equals("") ) {
-
-            }
-
-            else if (data.startsWith("edit_bus")) {
+            } else if (data.startsWith("travel_bus_") && user.getRole().equals(Role.ADMIN) && user.getBotState().equals(BotState.TRAVEL_ADD_BUS)) {
+                sendMessage(TravelOperationImpl.getTravelOperationImpl().addPriceForPerSeat(callbackQuery));
+            } else if (data.startsWith("edit_bus")) {
                 // data example edit_bus_02c77cec-8648-4336-a69c-cdb5631124a1
             }
         }

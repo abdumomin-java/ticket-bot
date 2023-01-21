@@ -1,0 +1,25 @@
+[
+  {
+    "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+    "from": {
+      "id": "9343013f-d81a-43ad-8775-f99899363e53",
+      "name": "namangan"
+    },
+    "to": {
+      "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+      "name": "Termiz"
+    },
+    "departureTime": "2023-01-23T16:16",
+    "arrivalTime": "2023-01-23T16:16",
+    "bus": {
+      "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+      "name": "b26",
+      "number": "12",
+      "numberOfSeats": 20,
+      "isActive": true
+    },
+    "priceForPerSeat": 20000,
+    "status": "NEW",
+    "createdTime": "2023-01-21T12:05:02.703869559"
+  }
+]

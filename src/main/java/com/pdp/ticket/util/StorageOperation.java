@@ -7,6 +7,7 @@ import com.pdp.ticket.config.LocalDateTimeAdapter;
 import com.pdp.ticket.dto.EditingBus;
 import com.pdp.ticket.dto.EditingTravel;
 import com.pdp.ticket.model.*;
+import lombok.SneakyThrows;
 
 import java.io.*;
 import java.lang.reflect.Type;
@@ -26,11 +27,13 @@ public class StorageOperation {
     private static final String EDITING_TRAVEL = "src/main/resources/json/editingTravel.json";
 
     private static final String EDITING_BUS = "src/main/resources/json/editingBus.json";
+    private static final String TICKETS = "src/main/resources/json/ticket.json";
 
     public static List<Travel> getTravels() {
         Type type = new TypeToken<List<Travel>>() {
         }.getType();
-        Gson gson = new Gson();
+        Gson gson = new GsonBuilder()
+                .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter().nullSafe()).create();
         try (BufferedReader reader = Files.newBufferedReader(Path.of(TRAVEL))) {
             List<Travel> travels = gson.fromJson(reader, type);
             return travels == null ? new ArrayList<>() : travels;
@@ -41,7 +44,8 @@ public class StorageOperation {
     }
 
     public static void writeTravels(List<Travel> travels) {
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        Gson gson = new GsonBuilder().setPrettyPrinting()
+                .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter().nullSafe()).create();
         String s = gson.toJson(travels);
         try {
             Files.write(Path.of(TRAVEL), s.getBytes());
@@ -201,5 +205,28 @@ public class StorageOperation {
         List<Bus> buses = getBuses();
         buses.add(bus);
         writeBuses(buses);
+    }
+    public static List<Ticket> getTickets(){
+        Type type = new TypeToken<List<Ticket>>() {
+        }.getType();
+        Gson gson = new GsonBuilder()
+                .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter().nullSafe()).create();
+        try (BufferedReader reader = Files.newBufferedReader(Path.of(TICKETS))) {
+            List<Ticket> tickets = gson.fromJson(reader, type);
+            return tickets == null ? new ArrayList<>() : tickets;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return new ArrayList<>();
+    }
+    public static void writeTickets(List<Ticket> tickets) {
+        Gson gson = new GsonBuilder().setPrettyPrinting()
+                .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter().nullSafe()).create();
+        String s = gson.toJson(tickets);
+        try {
+            Files.write(Path.of(TICKETS), s.getBytes());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

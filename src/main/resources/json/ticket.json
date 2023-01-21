@@ -1,0 +1,582 @@
+[
+  {
+    "id": "50cb1a64-0645-4b0a-be1f-84fb6a1ee2f3",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 1,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "3c36e750-7f51-499f-9673-98c38eb54597",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 2,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "c06c2e89-89e7-40ae-8e4e-e84a580e30ea",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 3,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "c0cfb304-09c2-4d35-ac1b-0e19f4173950",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 4,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "cf8b5a56-386f-41b2-8538-5d964c502f4c",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 5,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "c600830a-3ebd-4058-a730-1d45130fd422",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 6,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "f6bf140b-861f-42d0-995b-938fcf150d30",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 7,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "3d1438dd-396f-42bf-82f4-85a1fe5c1dd3",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 8,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "f667d3ae-0456-45cd-a8e3-d17430e31442",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 9,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "b16e69bb-59ce-4fa8-b2ea-e8e48d7770b8",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 10,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "f3d02a83-0094-4a97-8439-42eff86c77df",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 11,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "3b14a5d7-a4d5-4c2c-bb8a-55e9ea0f866b",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 12,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "5fa3d732-7c45-42c6-a65b-9b15155cdcaf",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 13,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "f1b62f4b-5d1c-4891-8fdc-07201a83f9b4",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 14,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "fe3d2e42-4131-4426-a2b8-c05c1a1249ad",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 15,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "68d0e16e-88c6-4f46-9eda-1e43ddce92ef",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 16,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "393e363f-536f-4bcb-bb50-16a64057d405",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 17,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "50efc0fe-735b-4448-93ed-28f3b14626bf",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 18,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "bd67f0f9-a79f-4209-b37a-19da5faedf4d",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 19,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "ad4a6af0-432c-4071-aabd-7090c61b9541",
+    "travel": {
+      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "namangan"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2023-01-23T16:16",
+      "arrivalTime": "2023-01-23T16:16",
+      "bus": {
+        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
+        "name": "b26",
+        "number": "12",
+        "numberOfSeats": 20,
+        "isActive": true
+      },
+      "priceForPerSeat": 20000,
+      "status": "NEW",
+      "createdTime": "2023-01-21T12:05:02.703869559"
+    },
+    "price": 20000,
+    "seatNumber": 20,
+    "status": "AVAILABLE"
+  }
+]
