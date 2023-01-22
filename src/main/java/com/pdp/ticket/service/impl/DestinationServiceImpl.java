@@ -85,7 +85,7 @@ public class DestinationServiceImpl implements DestinationService {
     }
 
     @Override
-    public EditMessageText showDestination(CallbackQuery callbackQuery) {
+    public EditMessageText showDestinations(CallbackQuery callbackQuery) {
         EditMessageText editMessageText = new EditMessageText();
         editMessageText.setMessageId(callbackQuery.getMessage().getMessageId());
         editMessageText.setChatId(callbackQuery.getMessage().getChatId());

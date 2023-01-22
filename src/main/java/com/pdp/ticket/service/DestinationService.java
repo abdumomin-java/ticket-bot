@@ -13,6 +13,6 @@ public interface DestinationService {
 
     SendMessage createdNewDestination(Message message);
 
-    EditMessageText showDestination(CallbackQuery callbackQuery);
+    EditMessageText showDestinations(CallbackQuery callbackQuery);
 
 }

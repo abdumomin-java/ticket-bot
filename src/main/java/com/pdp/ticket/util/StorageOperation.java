@@ -7,7 +7,6 @@ import com.pdp.ticket.config.LocalDateTimeAdapter;
 import com.pdp.ticket.dto.EditingBus;
 import com.pdp.ticket.dto.EditingTravel;
 import com.pdp.ticket.model.*;
-import lombok.SneakyThrows;
 
 import java.io.*;
 import java.lang.reflect.Type;
@@ -25,7 +24,6 @@ public class StorageOperation {
     private static final String DESTINATION = "src/main/resources/json/destination.json";
     private static final String TRAVEL = "src/main/resources/json/travel.json";
     private static final String EDITING_TRAVEL = "src/main/resources/json/editingTravel.json";
-
     private static final String EDITING_BUS = "src/main/resources/json/editingBus.json";
     private static final String TICKETS = "src/main/resources/json/ticket.json";
 
@@ -54,9 +52,9 @@ public class StorageOperation {
         }
     }
 
-    public static void writeTravel(Travel bus) {
+    public static void writeTravel(Travel travel) {
         List<Travel> travels = getTravels();
-        travels.add(bus);
+        travels.add(travel);
         writeTravels(travels);
     }
 
@@ -67,19 +65,6 @@ public class StorageOperation {
         try (BufferedReader reader = Files.newBufferedReader(Path.of(USER))) {
             List<User> users = gson.fromJson(reader, type);
             return users == null ? new ArrayList<>() : users;
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return new ArrayList<>();
-    }
-
-    public static List<Destination> getDestination() {
-        Type type = new TypeToken<List<Destination>>() {
-        }.getType();
-        Gson gson = new Gson();
-        try (BufferedReader reader = Files.newBufferedReader(Path.of(DESTINATION))) {
-            List<Destination> destinations = gson.fromJson(reader, type);
-            return destinations == null ? new ArrayList<>() : destinations;
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -97,7 +82,8 @@ public class StorageOperation {
     }
 
     public static User getUserWithChatId(String chatId) {
-        return getUsers().stream().filter(user -> chatId.equals(user.getChatId())).findFirst().orElse(new User());
+        return getUsers().stream().filter(user ->
+                chatId.equals(user.getChatId())).findFirst().orElse(new User());
     }
 
 
@@ -112,22 +98,23 @@ public class StorageOperation {
     }
 
     public static List<EditingTravel> getEditingTravel() {
-        Type type = new TypeToken<List<EditingTravel>>() {}.getType();
+        Type type = new TypeToken<List<EditingTravel>>() {
+        }.getType();
         Gson gson = new GsonBuilder()
                 .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter().nullSafe()).create();
         try (BufferedReader reader = Files.newBufferedReader(Path.of(EDITING_TRAVEL))) {
-            List<EditingTravel> editingBuses = gson.fromJson(reader, type);
-            return editingBuses == null ? new ArrayList<>() : editingBuses;
+            List<EditingTravel> editingTravels = gson.fromJson(reader, type);
+            return editingTravels == null ? new ArrayList<>() : editingTravels;
         } catch (IOException e) {
             e.printStackTrace();
         }
         return new ArrayList<>();
     }
 
-    public static void writeEditingTravel(List<EditingTravel> editingBuses) {
+    public static void writeEditingTravel(List<EditingTravel> editingTravels) {
         Gson gson = new GsonBuilder().setPrettyPrinting()
                 .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter().nullSafe()).create();
-        String s = gson.toJson(editingBuses);
+        String s = gson.toJson(editingTravels);
         try {
             Files.write(Path.of(EDITING_TRAVEL), s.getBytes());
         } catch (IOException e) {
@@ -149,7 +136,8 @@ public class StorageOperation {
     }
 
     public static EditingBus getEditingBusChatId(String chatId) {
-        return getEditingBus().stream().filter(e -> chatId.equals(e.getChatId())).findFirst().orElse(new EditingBus());
+        return getEditingBus().stream().filter(e ->
+                chatId.equals(e.getChatId())).findFirst().orElse(new EditingBus());
     }
 
     public static void writeEditingBus(List<EditingBus> editingBuses) {
@@ -162,6 +150,18 @@ public class StorageOperation {
         }
     }
 
+    public static List<Destination> getDestination() {
+        Type type = new TypeToken<List<Destination>>(){}.getType();
+        Gson gson = new Gson();
+        try (BufferedReader reader = Files.newBufferedReader(Path.of(DESTINATION))) {
+            List<Destination> destinations = gson.fromJson(reader, type);
+            return destinations == null ? new ArrayList<>() : destinations;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return new ArrayList<>();
+    }
+
     public static void writeDestinations(List<Destination> destinations) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String s = gson.toJson(destinations);
@@ -172,15 +172,14 @@ public class StorageOperation {
         }
     }
 
-    public static void writeDestination(Destination bus) {
+    public static void writeDestination(Destination destination) {
         List<Destination> destinations = getDestination();
-        destinations.add(bus);
+        destinations.add(destination);
         writeDestinations(destinations);
     }
 
     public static List<Bus> getBuses() {
-        Type type = new TypeToken<List<Bus>>() {
-        }.getType();
+        Type type = new TypeToken<List<Bus>>(){}.getType();
         Gson gson = new Gson();
         try (BufferedReader reader = Files.newBufferedReader(Path.of(BUS))) {
             List<Bus> buses = gson.fromJson(reader, type);
@@ -206,9 +205,9 @@ public class StorageOperation {
         buses.add(bus);
         writeBuses(buses);
     }
-    public static List<Ticket> getTickets(){
-        Type type = new TypeToken<List<Ticket>>() {
-        }.getType();
+
+    public static List<Ticket> getTickets() {
+        Type type = new TypeToken<List<Ticket>>(){}.getType();
         Gson gson = new GsonBuilder()
                 .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter().nullSafe()).create();
         try (BufferedReader reader = Files.newBufferedReader(Path.of(TICKETS))) {
@@ -219,6 +218,7 @@ public class StorageOperation {
         }
         return new ArrayList<>();
     }
+
     public static void writeTickets(List<Ticket> tickets) {
         Gson gson = new GsonBuilder().setPrettyPrinting()
                 .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter().nullSafe()).create();

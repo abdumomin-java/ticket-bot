@@ -9,4 +9,5 @@ public interface UserService {
 
     SendMessage openUserMenu(Message message);
     EditMessageText openBuyTicket(CallbackQuery callbackQuery);
+    EditMessageText openMyHistory(CallbackQuery callbackQuery);
 }

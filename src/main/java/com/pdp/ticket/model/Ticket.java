@@ -12,7 +12,7 @@ public class Ticket {
     private UUID id;
     private Travel travel;
     private BigDecimal price;
-    int seatNumber;
+    private int seatNumber;
     private TicketStatus status;
 
 }
