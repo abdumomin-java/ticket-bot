@@ -76,7 +76,7 @@ public class TicketBot extends TelegramLongPollingBot {
             } else if (data.equals("create_destination") && user.getBotState().equals(BotState.DESTINATION_MENU) && user.getRole().equals(Role.ADMIN)) {
                 sendMessage(DestinationServiceImpl.getDestinationServiceImpl().addDestination(callbackQuery));
             } else if (data.equals("show_destination") && user.getBotState().equals(BotState.DESTINATION_MENU) && user.getRole().equals(Role.ADMIN)) {
-                sendMessage(DestinationServiceImpl.getDestinationServiceImpl().showDestination(callbackQuery));
+                sendMessage(DestinationServiceImpl.getDestinationServiceImpl().showDestinations(callbackQuery));
             } else if (data.equals("travel_operation") && user.getBotState().equals(BotState.ADMIN_MENU) && user.getRole().equals(Role.ADMIN)) {
                 sendMessage(TravelOperationImpl.getTravelOperationImpl().openTravel(callbackQuery));
             } else if (data.equals("create_travel") && user.getBotState().equals(BotState.TRAVEL_MENU) && user.getRole().equals(Role.ADMIN)) {
@@ -117,11 +117,11 @@ public class TicketBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotToken() {
-        return "token";
+        return "";
     }
 
     @Override
     public String getBotUsername() {
-        return "b26NewBot";
+        return "";
     }
 }

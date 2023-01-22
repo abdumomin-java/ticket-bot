@@ -54,4 +54,11 @@ public class UserServiceImpl implements UserService {
         editMessageText.setText("  11111  ");
         return editMessageText;
     }
+
+    @Override
+    public EditMessageText openMyHistory(CallbackQuery callbackQuery) {
+        EditMessageText editMessageText = new EditMessageText();
+        //
+        return editMessageText;
+    }
 }
