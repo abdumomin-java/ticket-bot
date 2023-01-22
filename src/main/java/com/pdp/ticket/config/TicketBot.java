@@ -117,11 +117,11 @@ public class TicketBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotToken() {
-        return "5904787852:AAEAAgHmAwhSaLcgFHtQCeqoIyIWvMtXMSc";
+        return "";
     }
 
     @Override
     public String getBotUsername() {
-        return "B26Ztest_bot";
+        return "";
     }
 }
