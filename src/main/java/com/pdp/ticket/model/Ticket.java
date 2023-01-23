@@ -1,5 +1,6 @@
 package com.pdp.ticket.model;
 
+import com.pdp.ticket.enam.TicketStatus;
 import lombok.Getter;
 import lombok.Setter;
 

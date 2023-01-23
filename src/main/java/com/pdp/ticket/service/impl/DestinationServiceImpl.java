@@ -1,7 +1,6 @@
 package com.pdp.ticket.service.impl;
 
-import com.pdp.ticket.model.BotState;
-import com.pdp.ticket.model.Bus;
+import com.pdp.ticket.enam.BotState;
 import com.pdp.ticket.model.Destination;
 import com.pdp.ticket.service.DestinationService;
 import com.pdp.ticket.util.KeybordHelper;

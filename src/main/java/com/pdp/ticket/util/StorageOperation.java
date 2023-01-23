@@ -6,8 +6,8 @@ import com.google.gson.GsonBuilder;
 import com.pdp.ticket.config.LocalDateTimeAdapter;
 import com.pdp.ticket.dto.EditingBus;
 import com.pdp.ticket.dto.EditingTravel;
+import com.pdp.ticket.enam.BotState;
 import com.pdp.ticket.model.*;
-import lombok.SneakyThrows;
 
 import java.io.*;
 import java.lang.reflect.Type;

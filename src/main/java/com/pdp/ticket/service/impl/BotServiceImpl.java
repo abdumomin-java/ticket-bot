@@ -1,11 +1,10 @@
 package com.pdp.ticket.service.impl;
 
-import com.pdp.ticket.model.BotState;
-import com.pdp.ticket.model.Role;
+import com.pdp.ticket.enam.BotState;
+import com.pdp.ticket.enam.Role;
 import com.pdp.ticket.model.User;
 import com.pdp.ticket.service.BotService;
 import com.pdp.ticket.util.StorageOperation;
-import org.checkerframework.checker.units.qual.A;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Contact;
 import org.telegram.telegrambots.meta.api.objects.Message;
@@ -82,7 +81,7 @@ public class BotServiceImpl implements BotService {
         replyKeyboardRemove.setRemoveKeyboard(true);
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(message.getChatId());
-        if (phoneNumber.equals("+998907478055")) {
+        if (phoneNumber.equals("+998973514949")) {
             user.setPhoneNumber(phoneNumber);
             user.setBotState(BotState.ADMIN_MENU);
             user.setRole(Role.ADMIN);

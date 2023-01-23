@@ -1,4 +1,4 @@
-package com.pdp.ticket.model;
+package com.pdp.ticket.enam;
 
 public enum BotState {
       SHARE_CONTACT,
@@ -18,7 +18,7 @@ public enum BotState {
       TRAVEL_ADD_ARRIVAL_TIME,
       TRAVEL_ADD_BUS,
       TRAVEL_ADD_PRICE_FOR_PER_SEAT,
-      TRAVEL_ADD_CREATED_TIME,
+      TRAVEL_SHOW_MENU,
 
       ADMIN_DRIVER_MENU,
       ADMIN_TRAVEL_MENU,

@@ -1,13 +1,15 @@
 package com.pdp.ticket.config;
 
-import com.pdp.ticket.model.BotState;
-import com.pdp.ticket.model.Role;
+import com.pdp.ticket.enam.BotState;
+import com.pdp.ticket.enam.Role;
 import com.pdp.ticket.model.User;
 import com.pdp.ticket.service.impl.*;
 import com.pdp.ticket.util.StorageOperation;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
+import org.telegram.telegrambots.meta.api.methods.send.SendDocument;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
+import org.telegram.telegrambots.meta.api.methods.updatingmessages.DeleteMessage;
 import org.telegram.telegrambots.meta.api.methods.updatingmessages.EditMessageReplyMarkup;
 import org.telegram.telegrambots.meta.api.methods.updatingmessages.EditMessageText;
 import org.telegram.telegrambots.meta.api.objects.CallbackQuery;
@@ -23,6 +25,7 @@ public class TicketBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
         if (update.hasMessage()) {
+            System.out.println("Chat: " + update.getMessage().getChat().getUserName());
             Message message = update.getMessage();
             String messageText = message.getText();
             Contact contact = message.getContact();
@@ -57,18 +60,19 @@ public class TicketBot extends TelegramLongPollingBot {
         }
         if (update.hasCallbackQuery()) {
             CallbackQuery callbackQuery = update.getCallbackQuery();
+            System.out.println(" CallBack: " + callbackQuery.getMessage().getChat().getUserName());
             User user = StorageOperation.getUserWithChatId(update.getCallbackQuery().getMessage().getChatId().toString());
-            String data = update.getCallbackQuery().getData();
+            String data = callbackQuery.getData();
             if (data.equals("bus_operation") &&
                     (user.getBotState().equals(BotState.ADMIN_MENU) || user.getBotState().equals(BotState.BUS_SHOW_BUS)) &&
                     user.getRole().equals(Role.ADMIN)) {
-                sendMessage(BusServiceImpl.getInstance().openBus(update.getCallbackQuery()));
-            } else if (data.equals("back_to_admin_menu")) {
-                sendMessage(AdminServiceImpl.getInstance().backToMenu(update.getCallbackQuery()));
+                sendMessage(BusServiceImpl.getInstance().openBus(callbackQuery));
+            } else if (data.equals("back_to_admin_menu") && user.getRole().equals(Role.ADMIN) && (user.getBotState().equals(BotState.BUS_MENU) || user.getBotState().equals(BotState.ADMIN_MENU))) {
+                sendMessage(AdminServiceImpl.getInstance().backToMenu(callbackQuery));
             } else if (data.equals("create_bus") && user.getBotState().equals(BotState.BUS_MENU) && user.getRole().equals(Role.ADMIN)) {
-                sendMessage(BusServiceImpl.getInstance().addBus(update.getCallbackQuery()));
+                sendMessage(BusServiceImpl.getInstance().addBus(callbackQuery));
             } else if (data.equals("show_buses") && user.getBotState().equals(BotState.BUS_MENU) && user.getRole().equals(Role.ADMIN)) {
-                sendMessage(BusServiceImpl.getInstance().showBuses(update.getCallbackQuery()));
+                sendMessage(BusServiceImpl.getInstance().showBuses(callbackQuery));
             } else if (data.equals("destination_operation")
                     && (user.getBotState().equals(BotState.ADMIN_MENU) || user.getBotState().equals(BotState.DESTINATION_SHOW_DESTINATION))
                     && user.getRole().equals(Role.ADMIN)) {
@@ -87,9 +91,21 @@ public class TicketBot extends TelegramLongPollingBot {
                 sendMessage(TravelOperationImpl.getTravelOperationImpl().addDepartureTimeTravel(callbackQuery));
             } else if (data.startsWith("travel_bus_") && user.getRole().equals(Role.ADMIN) && user.getBotState().equals(BotState.TRAVEL_ADD_BUS)) {
                 sendMessage(TravelOperationImpl.getTravelOperationImpl().addPriceForPerSeat(callbackQuery));
-            } else if (data.startsWith("edit_bus")) {
-                // data example edit_bus_02c77cec-8648-4336-a69c-cdb5631124a1
+            } else if (data.equals("show_travel") && user.getRole().equals(Role.ADMIN) && user.getBotState().equals(BotState.TRAVEL_MENU)) {
+                sendMessage(TravelOperationImpl.getTravelOperationImpl().showTravels(callbackQuery));
+            } else if (data.equals("back_to_travel_menu") && user.getRole().equals(Role.ADMIN) && user.getBotState().equals(BotState.TRAVEL_MENU) ) {
+                sendMessage(TravelOperationImpl.getTravelOperationImpl().openTravel(callbackQuery));
+            } else if (data.equals("by_chat_show_travel") && user.getRole().equals(Role.ADMIN) && user.getBotState().equals(BotState.TRAVEL_SHOW_MENU)) {
+                sendMessage(TravelOperationImpl.getTravelOperationImpl().showTravelByBot(callbackQuery));
+            } else if (data.equals("by_word_show_travel") && user.getRole().equals(Role.ADMIN) && user.getBotState().equals(BotState.TRAVEL_SHOW_MENU)) {
+                sendMessage(TravelOperationImpl.getTravelOperationImpl().showTravelByWord(callbackQuery));
+            } else if (data.equals("by_pdf_show_travel") && user.getRole().equals(Role.ADMIN) && user.getBotState().equals(BotState.TRAVEL_SHOW_MENU)) {
+                sendMessage(TravelOperationImpl.getTravelOperationImpl().showTravelByPdf(callbackQuery));
+            } else if (data.equals("by_excel_show_travel") && user.getRole().equals(Role.ADMIN) && user.getBotState().equals(BotState.TRAVEL_SHOW_MENU)) {
+                sendMessage(TravelOperationImpl.getTravelOperationImpl().showTravelByExcel(callbackQuery));
             }
+
+
         }
 
     }
@@ -98,16 +114,18 @@ public class TicketBot extends TelegramLongPollingBot {
         try {
             if (object instanceof SendMessage) {
                 execute((SendMessage) object);
-            }
-            if (object instanceof SendPhoto) {
+            } else if (object instanceof SendPhoto) {
                 execute((SendPhoto) object);
-            }
-            if (object instanceof EditMessageReplyMarkup) {
+            } else if (object instanceof EditMessageReplyMarkup) {
                 execute((EditMessageReplyMarkup) object);
+            } else if (object instanceof EditMessageText editMessageText) {
+                execute(editMessageText);
+            } else if (object instanceof SendDocument sendDocument) {
+                execute(sendDocument);
+            }else if (object instanceof DeleteMessage deleteMessage) {
+                execute(deleteMessage);
             }
-            if (object instanceof EditMessageText) {
-                execute((EditMessageText) object);
-            }
+
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
@@ -115,11 +133,11 @@ public class TicketBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotToken() {
-        return "5773494964:AAEtvEKpyTu96ukn0VIm8qKu_IsgmM7amgg";
+        return "";
     }
 
     @Override
     public String getBotUsername() {
-        return "b26NewBot";
+        return "";
     }
 }

@@ -1,6 +1,6 @@
 package com.pdp.ticket.service.impl;
 
-import com.pdp.ticket.model.BotState;
+import com.pdp.ticket.enam.BotState;
 import com.pdp.ticket.model.Bus;
 import com.pdp.ticket.dto.EditingBus;
 import com.pdp.ticket.service.BusService;
@@ -18,7 +18,6 @@ import java.util.List;
 import java.util.UUID;
 
 public class BusServiceImpl implements BusService {
-
     private static final BusService busService = new BusServiceImpl();
 
     public static BusService getInstance() {

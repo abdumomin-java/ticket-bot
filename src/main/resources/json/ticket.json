@@ -1,582 +1,1249 @@
 [
   {
-    "id": "50cb1a64-0645-4b0a-be1f-84fb6a1ee2f3",
+    "id": "8378c5ee-05ac-495e-8a88-577c1dbde66b",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "7b2b76d8-f93c-4a8d-9356-b295d6161f7f",
       "from": {
         "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "name": "Namangan"
       },
       "to": {
-        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
-        "name": "Termiz"
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2022-12-22T23:23",
+      "arrivalTime": "2022-12-23T23:23",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 11000,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T09:25:03.768722200"
     },
-    "price": 20000,
+    "price": 11000,
     "seatNumber": 1,
     "status": "AVAILABLE"
   },
   {
-    "id": "3c36e750-7f51-499f-9673-98c38eb54597",
+    "id": "569abe32-6d70-4dca-ad8d-2fb22d439d5e",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "7b2b76d8-f93c-4a8d-9356-b295d6161f7f",
       "from": {
         "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "name": "Namangan"
       },
       "to": {
-        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
-        "name": "Termiz"
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2022-12-22T23:23",
+      "arrivalTime": "2022-12-23T23:23",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 11000,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T09:25:03.768722200"
     },
-    "price": 20000,
+    "price": 11000,
     "seatNumber": 2,
     "status": "AVAILABLE"
   },
   {
-    "id": "c06c2e89-89e7-40ae-8e4e-e84a580e30ea",
+    "id": "4d4c75a3-c2b9-4fa7-ac7c-1678ed2707d5",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "7b2b76d8-f93c-4a8d-9356-b295d6161f7f",
       "from": {
         "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "name": "Namangan"
       },
       "to": {
-        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
-        "name": "Termiz"
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2022-12-22T23:23",
+      "arrivalTime": "2022-12-23T23:23",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 11000,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T09:25:03.768722200"
     },
-    "price": 20000,
+    "price": 11000,
     "seatNumber": 3,
     "status": "AVAILABLE"
   },
   {
-    "id": "c0cfb304-09c2-4d35-ac1b-0e19f4173950",
+    "id": "2d4591b7-8a94-4ff3-a35f-4eb0fc2890a4",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "7b2b76d8-f93c-4a8d-9356-b295d6161f7f",
       "from": {
         "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "name": "Namangan"
       },
       "to": {
-        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
-        "name": "Termiz"
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2022-12-22T23:23",
+      "arrivalTime": "2022-12-23T23:23",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 11000,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T09:25:03.768722200"
     },
-    "price": 20000,
+    "price": 11000,
     "seatNumber": 4,
     "status": "AVAILABLE"
   },
   {
-    "id": "cf8b5a56-386f-41b2-8538-5d964c502f4c",
+    "id": "b02d5da7-bf01-49c7-9bf2-ab677add4b08",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "7b2b76d8-f93c-4a8d-9356-b295d6161f7f",
       "from": {
         "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "name": "Namangan"
       },
       "to": {
-        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
-        "name": "Termiz"
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2022-12-22T23:23",
+      "arrivalTime": "2022-12-23T23:23",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 11000,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T09:25:03.768722200"
     },
-    "price": 20000,
+    "price": 11000,
     "seatNumber": 5,
     "status": "AVAILABLE"
   },
   {
-    "id": "c600830a-3ebd-4058-a730-1d45130fd422",
+    "id": "c2f93cd0-c3c0-4f33-88f3-2df48837eebe",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "7b2b76d8-f93c-4a8d-9356-b295d6161f7f",
       "from": {
         "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "name": "Namangan"
       },
       "to": {
-        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
-        "name": "Termiz"
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2022-12-22T23:23",
+      "arrivalTime": "2022-12-23T23:23",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 11000,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T09:25:03.768722200"
     },
-    "price": 20000,
+    "price": 11000,
     "seatNumber": 6,
     "status": "AVAILABLE"
   },
   {
-    "id": "f6bf140b-861f-42d0-995b-938fcf150d30",
+    "id": "8c3f887f-4bff-452a-bde9-eb1ead4f5481",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "7b2b76d8-f93c-4a8d-9356-b295d6161f7f",
       "from": {
         "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "name": "Namangan"
       },
       "to": {
-        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
-        "name": "Termiz"
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2022-12-22T23:23",
+      "arrivalTime": "2022-12-23T23:23",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 11000,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T09:25:03.768722200"
     },
-    "price": 20000,
+    "price": 11000,
     "seatNumber": 7,
     "status": "AVAILABLE"
   },
   {
-    "id": "3d1438dd-396f-42bf-82f4-85a1fe5c1dd3",
+    "id": "c07fb104-6ceb-44c9-8143-6ca9fd407a90",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "7b2b76d8-f93c-4a8d-9356-b295d6161f7f",
       "from": {
         "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "name": "Namangan"
       },
       "to": {
-        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
-        "name": "Termiz"
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2022-12-22T23:23",
+      "arrivalTime": "2022-12-23T23:23",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 11000,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T09:25:03.768722200"
     },
-    "price": 20000,
+    "price": 11000,
     "seatNumber": 8,
     "status": "AVAILABLE"
   },
   {
-    "id": "f667d3ae-0456-45cd-a8e3-d17430e31442",
+    "id": "3875e7cd-d86f-4a75-af53-a55fc082d15a",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "7b2b76d8-f93c-4a8d-9356-b295d6161f7f",
       "from": {
         "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "name": "Namangan"
       },
       "to": {
-        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
-        "name": "Termiz"
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2022-12-22T23:23",
+      "arrivalTime": "2022-12-23T23:23",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 11000,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T09:25:03.768722200"
     },
-    "price": 20000,
+    "price": 11000,
     "seatNumber": 9,
     "status": "AVAILABLE"
   },
   {
-    "id": "b16e69bb-59ce-4fa8-b2ea-e8e48d7770b8",
+    "id": "b51a9d11-821f-4586-be2d-69ebea232093",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "7b2b76d8-f93c-4a8d-9356-b295d6161f7f",
       "from": {
         "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "name": "Namangan"
       },
       "to": {
-        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
-        "name": "Termiz"
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2022-12-22T23:23",
+      "arrivalTime": "2022-12-23T23:23",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 11000,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T09:25:03.768722200"
     },
-    "price": 20000,
+    "price": 11000,
     "seatNumber": 10,
     "status": "AVAILABLE"
   },
   {
-    "id": "f3d02a83-0094-4a97-8439-42eff86c77df",
+    "id": "63f78cc2-22c5-431d-aa3a-fad2a3220e9c",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "c953e55d-cfdf-4859-8a48-b0fb34cf4619",
       "from": {
-        "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
       },
       "to": {
         "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
         "name": "Termiz"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2022-12-12T12:12",
+      "arrivalTime": "2022-12-13T17:17",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "e3c74101-84dd-4d0d-8226-5f09f6fd70e2",
+        "name": "name3",
+        "number": "75W170SD",
+        "numberOfSeats": 12,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 15000,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T10:34:21.412831"
     },
-    "price": 20000,
+    "price": 15000,
+    "seatNumber": 1,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "bfc72037-b62e-47cd-8611-abb4ccca687e",
+    "travel": {
+      "id": "c953e55d-cfdf-4859-8a48-b0fb34cf4619",
+      "from": {
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2022-12-12T12:12",
+      "arrivalTime": "2022-12-13T17:17",
+      "bus": {
+        "id": "e3c74101-84dd-4d0d-8226-5f09f6fd70e2",
+        "name": "name3",
+        "number": "75W170SD",
+        "numberOfSeats": 12,
+        "isActive": true
+      },
+      "priceForPerSeat": 15000,
+      "status": "NEW",
+      "createdTime": "2023-01-22T10:34:21.412831"
+    },
+    "price": 15000,
+    "seatNumber": 2,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "7d55c4e0-62b6-4d37-988c-15691e5c455c",
+    "travel": {
+      "id": "c953e55d-cfdf-4859-8a48-b0fb34cf4619",
+      "from": {
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2022-12-12T12:12",
+      "arrivalTime": "2022-12-13T17:17",
+      "bus": {
+        "id": "e3c74101-84dd-4d0d-8226-5f09f6fd70e2",
+        "name": "name3",
+        "number": "75W170SD",
+        "numberOfSeats": 12,
+        "isActive": true
+      },
+      "priceForPerSeat": 15000,
+      "status": "NEW",
+      "createdTime": "2023-01-22T10:34:21.412831"
+    },
+    "price": 15000,
+    "seatNumber": 3,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "825b0885-d4ba-4905-8f0f-2a50c5272c48",
+    "travel": {
+      "id": "c953e55d-cfdf-4859-8a48-b0fb34cf4619",
+      "from": {
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2022-12-12T12:12",
+      "arrivalTime": "2022-12-13T17:17",
+      "bus": {
+        "id": "e3c74101-84dd-4d0d-8226-5f09f6fd70e2",
+        "name": "name3",
+        "number": "75W170SD",
+        "numberOfSeats": 12,
+        "isActive": true
+      },
+      "priceForPerSeat": 15000,
+      "status": "NEW",
+      "createdTime": "2023-01-22T10:34:21.412831"
+    },
+    "price": 15000,
+    "seatNumber": 4,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "f41dd337-8c34-4fa1-ba17-5590a6d4fa82",
+    "travel": {
+      "id": "c953e55d-cfdf-4859-8a48-b0fb34cf4619",
+      "from": {
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2022-12-12T12:12",
+      "arrivalTime": "2022-12-13T17:17",
+      "bus": {
+        "id": "e3c74101-84dd-4d0d-8226-5f09f6fd70e2",
+        "name": "name3",
+        "number": "75W170SD",
+        "numberOfSeats": 12,
+        "isActive": true
+      },
+      "priceForPerSeat": 15000,
+      "status": "NEW",
+      "createdTime": "2023-01-22T10:34:21.412831"
+    },
+    "price": 15000,
+    "seatNumber": 5,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "4998757b-d9f1-4c8e-9f6a-d9823ba24a7a",
+    "travel": {
+      "id": "c953e55d-cfdf-4859-8a48-b0fb34cf4619",
+      "from": {
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2022-12-12T12:12",
+      "arrivalTime": "2022-12-13T17:17",
+      "bus": {
+        "id": "e3c74101-84dd-4d0d-8226-5f09f6fd70e2",
+        "name": "name3",
+        "number": "75W170SD",
+        "numberOfSeats": 12,
+        "isActive": true
+      },
+      "priceForPerSeat": 15000,
+      "status": "NEW",
+      "createdTime": "2023-01-22T10:34:21.412831"
+    },
+    "price": 15000,
+    "seatNumber": 6,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "9031c323-4f5c-4d89-a25b-ffaabe9faf73",
+    "travel": {
+      "id": "c953e55d-cfdf-4859-8a48-b0fb34cf4619",
+      "from": {
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2022-12-12T12:12",
+      "arrivalTime": "2022-12-13T17:17",
+      "bus": {
+        "id": "e3c74101-84dd-4d0d-8226-5f09f6fd70e2",
+        "name": "name3",
+        "number": "75W170SD",
+        "numberOfSeats": 12,
+        "isActive": true
+      },
+      "priceForPerSeat": 15000,
+      "status": "NEW",
+      "createdTime": "2023-01-22T10:34:21.412831"
+    },
+    "price": 15000,
+    "seatNumber": 7,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "b2ea47b3-f39d-4db9-888d-b79eada53a4d",
+    "travel": {
+      "id": "c953e55d-cfdf-4859-8a48-b0fb34cf4619",
+      "from": {
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2022-12-12T12:12",
+      "arrivalTime": "2022-12-13T17:17",
+      "bus": {
+        "id": "e3c74101-84dd-4d0d-8226-5f09f6fd70e2",
+        "name": "name3",
+        "number": "75W170SD",
+        "numberOfSeats": 12,
+        "isActive": true
+      },
+      "priceForPerSeat": 15000,
+      "status": "NEW",
+      "createdTime": "2023-01-22T10:34:21.412831"
+    },
+    "price": 15000,
+    "seatNumber": 8,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "33764224-10a9-4f74-b77b-2857e2e814e6",
+    "travel": {
+      "id": "c953e55d-cfdf-4859-8a48-b0fb34cf4619",
+      "from": {
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2022-12-12T12:12",
+      "arrivalTime": "2022-12-13T17:17",
+      "bus": {
+        "id": "e3c74101-84dd-4d0d-8226-5f09f6fd70e2",
+        "name": "name3",
+        "number": "75W170SD",
+        "numberOfSeats": 12,
+        "isActive": true
+      },
+      "priceForPerSeat": 15000,
+      "status": "NEW",
+      "createdTime": "2023-01-22T10:34:21.412831"
+    },
+    "price": 15000,
+    "seatNumber": 9,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "834a413d-4c03-4aeb-9f93-d800fa2f4efc",
+    "travel": {
+      "id": "c953e55d-cfdf-4859-8a48-b0fb34cf4619",
+      "from": {
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2022-12-12T12:12",
+      "arrivalTime": "2022-12-13T17:17",
+      "bus": {
+        "id": "e3c74101-84dd-4d0d-8226-5f09f6fd70e2",
+        "name": "name3",
+        "number": "75W170SD",
+        "numberOfSeats": 12,
+        "isActive": true
+      },
+      "priceForPerSeat": 15000,
+      "status": "NEW",
+      "createdTime": "2023-01-22T10:34:21.412831"
+    },
+    "price": 15000,
+    "seatNumber": 10,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "e1ad444c-26a3-4c2d-8f03-52e45017f4c5",
+    "travel": {
+      "id": "c953e55d-cfdf-4859-8a48-b0fb34cf4619",
+      "from": {
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
+      },
+      "to": {
+        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
+        "name": "Termiz"
+      },
+      "departureTime": "2022-12-12T12:12",
+      "arrivalTime": "2022-12-13T17:17",
+      "bus": {
+        "id": "e3c74101-84dd-4d0d-8226-5f09f6fd70e2",
+        "name": "name3",
+        "number": "75W170SD",
+        "numberOfSeats": 12,
+        "isActive": true
+      },
+      "priceForPerSeat": 15000,
+      "status": "NEW",
+      "createdTime": "2023-01-22T10:34:21.412831"
+    },
+    "price": 15000,
     "seatNumber": 11,
     "status": "AVAILABLE"
   },
   {
-    "id": "3b14a5d7-a4d5-4c2c-bb8a-55e9ea0f866b",
+    "id": "5e4f351c-49b7-45ad-a08a-d4516dc3502f",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "c953e55d-cfdf-4859-8a48-b0fb34cf4619",
       "from": {
-        "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "id": "14600c11-f02d-4b18-8c74-3c3202acc065",
+        "name": "Toshkent"
       },
       "to": {
         "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
         "name": "Termiz"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2022-12-12T12:12",
+      "arrivalTime": "2022-12-13T17:17",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "e3c74101-84dd-4d0d-8226-5f09f6fd70e2",
+        "name": "name3",
+        "number": "75W170SD",
+        "numberOfSeats": 12,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 15000,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T10:34:21.412831"
     },
-    "price": 20000,
+    "price": 15000,
     "seatNumber": 12,
     "status": "AVAILABLE"
   },
   {
-    "id": "5fa3d732-7c45-42c6-a65b-9b15155cdcaf",
+    "id": "c2349d2c-338b-48f2-a0cb-a3debe69b850",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "bc3234ed-8918-444e-a14b-3da615e638f3",
       "from": {
         "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "name": "Namangan"
       },
       "to": {
-        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
-        "name": "Termiz"
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2020-12-12T15:15",
+      "arrivalTime": "2021-12-15T15:15",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 1500,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T16:52:38.385926400"
     },
-    "price": 20000,
-    "seatNumber": 13,
+    "price": 1500,
+    "seatNumber": 1,
     "status": "AVAILABLE"
   },
   {
-    "id": "f1b62f4b-5d1c-4891-8fdc-07201a83f9b4",
+    "id": "08699ace-80e9-4272-8d86-5fb065723f88",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "bc3234ed-8918-444e-a14b-3da615e638f3",
       "from": {
         "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "name": "Namangan"
       },
       "to": {
-        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
-        "name": "Termiz"
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2020-12-12T15:15",
+      "arrivalTime": "2021-12-15T15:15",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 1500,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T16:52:38.385926400"
     },
-    "price": 20000,
-    "seatNumber": 14,
+    "price": 1500,
+    "seatNumber": 2,
     "status": "AVAILABLE"
   },
   {
-    "id": "fe3d2e42-4131-4426-a2b8-c05c1a1249ad",
+    "id": "a3bc4d59-c93b-411d-9a72-aab7fe348dde",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "bc3234ed-8918-444e-a14b-3da615e638f3",
       "from": {
         "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "name": "Namangan"
       },
       "to": {
-        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
-        "name": "Termiz"
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2020-12-12T15:15",
+      "arrivalTime": "2021-12-15T15:15",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 1500,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T16:52:38.385926400"
     },
-    "price": 20000,
-    "seatNumber": 15,
+    "price": 1500,
+    "seatNumber": 3,
     "status": "AVAILABLE"
   },
   {
-    "id": "68d0e16e-88c6-4f46-9eda-1e43ddce92ef",
+    "id": "79326653-b72c-413c-9399-a6d970da8ac5",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "bc3234ed-8918-444e-a14b-3da615e638f3",
       "from": {
         "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "name": "Namangan"
       },
       "to": {
-        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
-        "name": "Termiz"
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2020-12-12T15:15",
+      "arrivalTime": "2021-12-15T15:15",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 1500,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T16:52:38.385926400"
     },
-    "price": 20000,
-    "seatNumber": 16,
+    "price": 1500,
+    "seatNumber": 4,
     "status": "AVAILABLE"
   },
   {
-    "id": "393e363f-536f-4bcb-bb50-16a64057d405",
+    "id": "8f08bd55-7d70-4ea0-b2f9-21f1b0074d3d",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "bc3234ed-8918-444e-a14b-3da615e638f3",
       "from": {
         "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "name": "Namangan"
       },
       "to": {
-        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
-        "name": "Termiz"
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2020-12-12T15:15",
+      "arrivalTime": "2021-12-15T15:15",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 1500,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T16:52:38.385926400"
     },
-    "price": 20000,
-    "seatNumber": 17,
+    "price": 1500,
+    "seatNumber": 5,
     "status": "AVAILABLE"
   },
   {
-    "id": "50efc0fe-735b-4448-93ed-28f3b14626bf",
+    "id": "3dc2b290-80fe-4317-887b-66441fe55880",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "bc3234ed-8918-444e-a14b-3da615e638f3",
       "from": {
         "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "name": "Namangan"
       },
       "to": {
-        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
-        "name": "Termiz"
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2020-12-12T15:15",
+      "arrivalTime": "2021-12-15T15:15",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 1500,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T16:52:38.385926400"
     },
-    "price": 20000,
-    "seatNumber": 18,
+    "price": 1500,
+    "seatNumber": 6,
     "status": "AVAILABLE"
   },
   {
-    "id": "bd67f0f9-a79f-4209-b37a-19da5faedf4d",
+    "id": "0f2d48e2-04f5-469b-8b96-c5a6f3f47a87",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "bc3234ed-8918-444e-a14b-3da615e638f3",
       "from": {
         "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "name": "Namangan"
       },
       "to": {
-        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
-        "name": "Termiz"
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2020-12-12T15:15",
+      "arrivalTime": "2021-12-15T15:15",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 1500,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T16:52:38.385926400"
     },
-    "price": 20000,
-    "seatNumber": 19,
+    "price": 1500,
+    "seatNumber": 7,
     "status": "AVAILABLE"
   },
   {
-    "id": "ad4a6af0-432c-4071-aabd-7090c61b9541",
+    "id": "9decf470-7bef-4ab7-b23e-2cb1b7376aaf",
     "travel": {
-      "id": "2892002e-d7ec-48bf-8eb1-851cd4568ab7",
+      "id": "bc3234ed-8918-444e-a14b-3da615e638f3",
       "from": {
         "id": "9343013f-d81a-43ad-8775-f99899363e53",
-        "name": "namangan"
+        "name": "Namangan"
       },
       "to": {
-        "id": "4bd5df51-60f5-4922-ba5c-31fa616e39cb",
-        "name": "Termiz"
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
       },
-      "departureTime": "2023-01-23T16:16",
-      "arrivalTime": "2023-01-23T16:16",
+      "departureTime": "2020-12-12T15:15",
+      "arrivalTime": "2021-12-15T15:15",
       "bus": {
-        "id": "f018a2f6-c6ba-4662-b545-ebd401bdcbb2",
-        "name": "b26",
-        "number": "12",
-        "numberOfSeats": 20,
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
         "isActive": true
       },
-      "priceForPerSeat": 20000,
+      "priceForPerSeat": 1500,
       "status": "NEW",
-      "createdTime": "2023-01-21T12:05:02.703869559"
+      "createdTime": "2023-01-22T16:52:38.385926400"
     },
-    "price": 20000,
-    "seatNumber": 20,
+    "price": 1500,
+    "seatNumber": 8,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "f77f0069-be0c-446b-a232-75d4a29f0e56",
+    "travel": {
+      "id": "bc3234ed-8918-444e-a14b-3da615e638f3",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "Namangan"
+      },
+      "to": {
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
+      },
+      "departureTime": "2020-12-12T15:15",
+      "arrivalTime": "2021-12-15T15:15",
+      "bus": {
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
+        "isActive": true
+      },
+      "priceForPerSeat": 1500,
+      "status": "NEW",
+      "createdTime": "2023-01-22T16:52:38.385926400"
+    },
+    "price": 1500,
+    "seatNumber": 9,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "ce6602d4-375c-47d5-8a81-ea341bc92c01",
+    "travel": {
+      "id": "bc3234ed-8918-444e-a14b-3da615e638f3",
+      "from": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "Namangan"
+      },
+      "to": {
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
+      },
+      "departureTime": "2020-12-12T15:15",
+      "arrivalTime": "2021-12-15T15:15",
+      "bus": {
+        "id": "0cf4fc55-0fc9-4712-9fd6-b6f004be2292",
+        "name": "name1",
+        "number": "10Q170AE",
+        "numberOfSeats": 10,
+        "isActive": true
+      },
+      "priceForPerSeat": 1500,
+      "status": "NEW",
+      "createdTime": "2023-01-22T16:52:38.385926400"
+    },
+    "price": 1500,
+    "seatNumber": 10,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "7e20e2c2-616f-4bd4-88e9-99c23b133671",
+    "travel": {
+      "id": "86ccc421-1d0a-46f5-a5c7-afa6f725f8ea",
+      "from": {
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
+      },
+      "to": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "Namangan"
+      },
+      "departureTime": "2023-02-22T11:30",
+      "arrivalTime": "2023-02-22T16:30",
+      "bus": {
+        "id": "fc7998f8-0ecc-41bf-9fd6-4cf31c791072",
+        "name": "name2",
+        "number": "30S170AD",
+        "numberOfSeats": 11,
+        "isActive": true
+      },
+      "priceForPerSeat": 77333,
+      "status": "NEW",
+      "createdTime": "2023-01-23T09:06:47.718513500"
+    },
+    "price": 77333,
+    "seatNumber": 1,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "f956ce71-9c25-42f2-9be2-52a1455704ae",
+    "travel": {
+      "id": "86ccc421-1d0a-46f5-a5c7-afa6f725f8ea",
+      "from": {
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
+      },
+      "to": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "Namangan"
+      },
+      "departureTime": "2023-02-22T11:30",
+      "arrivalTime": "2023-02-22T16:30",
+      "bus": {
+        "id": "fc7998f8-0ecc-41bf-9fd6-4cf31c791072",
+        "name": "name2",
+        "number": "30S170AD",
+        "numberOfSeats": 11,
+        "isActive": true
+      },
+      "priceForPerSeat": 77333,
+      "status": "NEW",
+      "createdTime": "2023-01-23T09:06:47.718513500"
+    },
+    "price": 77333,
+    "seatNumber": 2,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "6a6468e0-4799-4d0d-bb3a-4be658a93dff",
+    "travel": {
+      "id": "86ccc421-1d0a-46f5-a5c7-afa6f725f8ea",
+      "from": {
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
+      },
+      "to": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "Namangan"
+      },
+      "departureTime": "2023-02-22T11:30",
+      "arrivalTime": "2023-02-22T16:30",
+      "bus": {
+        "id": "fc7998f8-0ecc-41bf-9fd6-4cf31c791072",
+        "name": "name2",
+        "number": "30S170AD",
+        "numberOfSeats": 11,
+        "isActive": true
+      },
+      "priceForPerSeat": 77333,
+      "status": "NEW",
+      "createdTime": "2023-01-23T09:06:47.718513500"
+    },
+    "price": 77333,
+    "seatNumber": 3,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "13b92f26-2a5b-433c-bef5-a9320daf084d",
+    "travel": {
+      "id": "86ccc421-1d0a-46f5-a5c7-afa6f725f8ea",
+      "from": {
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
+      },
+      "to": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "Namangan"
+      },
+      "departureTime": "2023-02-22T11:30",
+      "arrivalTime": "2023-02-22T16:30",
+      "bus": {
+        "id": "fc7998f8-0ecc-41bf-9fd6-4cf31c791072",
+        "name": "name2",
+        "number": "30S170AD",
+        "numberOfSeats": 11,
+        "isActive": true
+      },
+      "priceForPerSeat": 77333,
+      "status": "NEW",
+      "createdTime": "2023-01-23T09:06:47.718513500"
+    },
+    "price": 77333,
+    "seatNumber": 4,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "cf4ac3cb-b20d-4e8c-931a-3aa6fb3a9395",
+    "travel": {
+      "id": "86ccc421-1d0a-46f5-a5c7-afa6f725f8ea",
+      "from": {
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
+      },
+      "to": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "Namangan"
+      },
+      "departureTime": "2023-02-22T11:30",
+      "arrivalTime": "2023-02-22T16:30",
+      "bus": {
+        "id": "fc7998f8-0ecc-41bf-9fd6-4cf31c791072",
+        "name": "name2",
+        "number": "30S170AD",
+        "numberOfSeats": 11,
+        "isActive": true
+      },
+      "priceForPerSeat": 77333,
+      "status": "NEW",
+      "createdTime": "2023-01-23T09:06:47.718513500"
+    },
+    "price": 77333,
+    "seatNumber": 5,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "73822ed0-2572-4485-9f05-6f8df050c22c",
+    "travel": {
+      "id": "86ccc421-1d0a-46f5-a5c7-afa6f725f8ea",
+      "from": {
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
+      },
+      "to": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "Namangan"
+      },
+      "departureTime": "2023-02-22T11:30",
+      "arrivalTime": "2023-02-22T16:30",
+      "bus": {
+        "id": "fc7998f8-0ecc-41bf-9fd6-4cf31c791072",
+        "name": "name2",
+        "number": "30S170AD",
+        "numberOfSeats": 11,
+        "isActive": true
+      },
+      "priceForPerSeat": 77333,
+      "status": "NEW",
+      "createdTime": "2023-01-23T09:06:47.718513500"
+    },
+    "price": 77333,
+    "seatNumber": 6,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "178bc458-5b25-48ec-abfe-793b0d43b0d7",
+    "travel": {
+      "id": "86ccc421-1d0a-46f5-a5c7-afa6f725f8ea",
+      "from": {
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
+      },
+      "to": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "Namangan"
+      },
+      "departureTime": "2023-02-22T11:30",
+      "arrivalTime": "2023-02-22T16:30",
+      "bus": {
+        "id": "fc7998f8-0ecc-41bf-9fd6-4cf31c791072",
+        "name": "name2",
+        "number": "30S170AD",
+        "numberOfSeats": 11,
+        "isActive": true
+      },
+      "priceForPerSeat": 77333,
+      "status": "NEW",
+      "createdTime": "2023-01-23T09:06:47.718513500"
+    },
+    "price": 77333,
+    "seatNumber": 7,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "a10adbbc-0f04-4e35-8eb8-6663f612c655",
+    "travel": {
+      "id": "86ccc421-1d0a-46f5-a5c7-afa6f725f8ea",
+      "from": {
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
+      },
+      "to": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "Namangan"
+      },
+      "departureTime": "2023-02-22T11:30",
+      "arrivalTime": "2023-02-22T16:30",
+      "bus": {
+        "id": "fc7998f8-0ecc-41bf-9fd6-4cf31c791072",
+        "name": "name2",
+        "number": "30S170AD",
+        "numberOfSeats": 11,
+        "isActive": true
+      },
+      "priceForPerSeat": 77333,
+      "status": "NEW",
+      "createdTime": "2023-01-23T09:06:47.718513500"
+    },
+    "price": 77333,
+    "seatNumber": 8,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "c35bcecb-4dca-48d5-9a3a-0c867859c87b",
+    "travel": {
+      "id": "86ccc421-1d0a-46f5-a5c7-afa6f725f8ea",
+      "from": {
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
+      },
+      "to": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "Namangan"
+      },
+      "departureTime": "2023-02-22T11:30",
+      "arrivalTime": "2023-02-22T16:30",
+      "bus": {
+        "id": "fc7998f8-0ecc-41bf-9fd6-4cf31c791072",
+        "name": "name2",
+        "number": "30S170AD",
+        "numberOfSeats": 11,
+        "isActive": true
+      },
+      "priceForPerSeat": 77333,
+      "status": "NEW",
+      "createdTime": "2023-01-23T09:06:47.718513500"
+    },
+    "price": 77333,
+    "seatNumber": 9,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "44130095-953e-4e46-bb22-ac3332cb5f4b",
+    "travel": {
+      "id": "86ccc421-1d0a-46f5-a5c7-afa6f725f8ea",
+      "from": {
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
+      },
+      "to": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "Namangan"
+      },
+      "departureTime": "2023-02-22T11:30",
+      "arrivalTime": "2023-02-22T16:30",
+      "bus": {
+        "id": "fc7998f8-0ecc-41bf-9fd6-4cf31c791072",
+        "name": "name2",
+        "number": "30S170AD",
+        "numberOfSeats": 11,
+        "isActive": true
+      },
+      "priceForPerSeat": 77333,
+      "status": "NEW",
+      "createdTime": "2023-01-23T09:06:47.718513500"
+    },
+    "price": 77333,
+    "seatNumber": 10,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "7865efa7-4d7f-420f-83de-c316f3db221e",
+    "travel": {
+      "id": "86ccc421-1d0a-46f5-a5c7-afa6f725f8ea",
+      "from": {
+        "id": "47bbd1b7-f4af-4bcf-8d55-665442935ef4",
+        "name": "Samarqand"
+      },
+      "to": {
+        "id": "9343013f-d81a-43ad-8775-f99899363e53",
+        "name": "Namangan"
+      },
+      "departureTime": "2023-02-22T11:30",
+      "arrivalTime": "2023-02-22T16:30",
+      "bus": {
+        "id": "fc7998f8-0ecc-41bf-9fd6-4cf31c791072",
+        "name": "name2",
+        "number": "30S170AD",
+        "numberOfSeats": 11,
+        "isActive": true
+      },
+      "priceForPerSeat": 77333,
+      "status": "NEW",
+      "createdTime": "2023-01-23T09:06:47.718513500"
+    },
+    "price": 77333,
+    "seatNumber": 11,
     "status": "AVAILABLE"
   }
 ]

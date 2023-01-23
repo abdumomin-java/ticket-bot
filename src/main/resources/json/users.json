@@ -1,18 +1,25 @@
 [
   {
-    "id": "2e5a83d5-59f7-4a54-a696-b01dcaf3f7af",
-    "chatId": "1752907421",
-    "phoneNumber": "998930815351",
-    "role": "ADMIN",
-    "balance": 0,
-    "botState": "ADMIN_MENU"
-  },
-  {
     "id": "7f49b076-a184-4ace-b934-f2bbbbe245dd",
     "chatId": "5575152637",
     "phoneNumber": "+998907478055",
     "role": "ADMIN",
     "balance": 0,
     "botState": "TRAVEL_MENU"
+  },
+  {
+    "id": "bc2ae47e-37ad-41d2-a541-c291cce54af7",
+    "chatId": "3230490",
+    "phoneNumber": "998973514949",
+    "role": "ADMIN",
+    "balance": 0,
+    "botState": "TRAVEL_MENU"
+  },
+  {
+    "id": "597ec0e9-3692-4302-966d-018ee0191d9b",
+    "chatId": "5472100549",
+    "role": "USER",
+    "balance": 0,
+    "botState": "SHARE_CONTACT"
   }
 ]

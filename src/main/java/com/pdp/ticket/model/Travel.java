@@ -1,5 +1,6 @@
 package com.pdp.ticket.model;
 
+import com.pdp.ticket.enam.TravelStatus;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

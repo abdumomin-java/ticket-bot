@@ -1,4 +1,4 @@
-package com.pdp.ticket.model;
+package com.pdp.ticket.enam;
 
 public enum TravelStatus {
     NEW,
