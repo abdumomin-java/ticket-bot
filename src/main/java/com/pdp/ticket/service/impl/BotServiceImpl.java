@@ -19,7 +19,6 @@ import java.util.List;
 import java.util.UUID;
 
 public class BotServiceImpl implements BotService {
-
     private static final BotService botService = new BotServiceImpl();
 
     public static BotService getInstance() {
